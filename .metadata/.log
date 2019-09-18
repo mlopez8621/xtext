@@ -1,0 +1,1932 @@
+!SESSION 2019-09-10 14:28:56.750 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 14:30:21.605
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2019-09-10 14:48:39.473 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 14:49:08.499
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 14:51:52.349
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 14:51:52.349
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE Software being installed: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE Missing requirement: org.eclipse.m2e.binaryproject 1.12.0.20190529-1916 requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.349
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE From: org.eclipse.m2e.binaryproject.ui 1.12.0.20190529-1916
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE To: bundle org.eclipse.m2e.binaryproject [1.12.0,1.13.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.349
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE From: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.349
+!MESSAGE To: org.eclipse.m2e.binaryproject.ui [1.12.0.20190529-1916]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 14:51:52.387
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 14:51:52.387
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE Software being installed: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE Missing requirement: org.eclipse.m2e.binaryproject 1.12.0.20190529-1916 requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.387
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE From: org.eclipse.m2e.binaryproject.ui 1.12.0.20190529-1916
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE To: bundle org.eclipse.m2e.binaryproject [1.12.0,1.13.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.387
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE From: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.387
+!MESSAGE To: org.eclipse.m2e.binaryproject.ui [1.12.0.20190529-1916]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 14:51:52.404
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 14:51:52.404
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE Software being installed: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE Missing requirement: org.eclipse.m2e.binaryproject 1.12.0.20190529-1916 requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.404
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE From: org.eclipse.m2e.binaryproject.ui 1.12.0.20190529-1916
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE To: bundle org.eclipse.m2e.binaryproject [1.12.0,1.13.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.404
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE From: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.404
+!MESSAGE To: org.eclipse.m2e.binaryproject.ui [1.12.0.20190529-1916]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 14:51:52.404
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 14:51:52.405
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE Software being installed: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE Missing requirement: org.eclipse.m2e.binaryproject 1.12.0.20190529-1916 requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.405
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE From: org.eclipse.m2e.binaryproject.ui 1.12.0.20190529-1916
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE To: bundle org.eclipse.m2e.binaryproject [1.12.0,1.13.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 14:51:52.405
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE From: m2e - Maven Integration for Eclipse (includes Incubating components) 1.12.0.20190529-1916 (org.eclipse.m2e.feature.feature.group 1.12.0.20190529-1916)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 14:51:52.405
+!MESSAGE To: org.eclipse.m2e.binaryproject.ui [1.12.0.20190529-1916]
+!SESSION 2019-09-10 14:53:39.796 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 14:54:01.157
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-09-10 14:56:16.231
+!MESSAGE Connection to http://mirror.lagoon.nc/pub/eclipse/releases/oxygen/201804111000/plugins/org.eclipse.acceleo.common.ui_3.7.2.201708211328.jar.pack.gz failed on La red es inaccesible (connect failed). Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: La red es inaccesible (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-09-10 14:56:22.931
+!MESSAGE Connection to http://mirror.lagoon.nc/pub/eclipse/releases/oxygen/201712201001/plugins/org.eclipse.eef.core.source_2.0.0.201705311515.jar failed on La red es inaccesible (connect failed). Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: La red es inaccesible (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-09-10 14:56:22.932
+!MESSAGE Connection to http://mirror.lagoon.nc/pub/eclipse/releases/oxygen/201712201001/plugins/org.eclipse.eef.common.ui.source_2.0.0.201705311515.jar failed on La red es inaccesible (connect failed). Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: La red es inaccesible (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-09-10 14:58:06.896 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 14:58:26.865
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 15:01:27.241
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 15:01:27.241
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.241
+!MESSAGE Software being installed: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.241
+!MESSAGE Missing requirement: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027) requires 'org.eclipse.gmf.map 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 15:01:27.260
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 15:01:27.260
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.260
+!MESSAGE Software being installed: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.260
+!MESSAGE Missing requirement: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027) requires 'org.eclipse.gmf.map 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 15:01:27.329
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 15:01:27.329
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.329
+!MESSAGE Software being installed: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.329
+!MESSAGE Missing requirement: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027) requires 'org.eclipse.gmf.map 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-09-10 15:01:27.330
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-09-10 15:01:27.330
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.330
+!MESSAGE Software being installed: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:01:27.330
+!MESSAGE Missing requirement: Eugenia 1.5.1.201809302027 (org.eclipse.epsilon.eugenia.feature.feature.group 1.5.1.201809302027) requires 'org.eclipse.gmf.map 0.0.0' but it could not be found
+!SESSION 2019-09-10 15:05:12.745 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 15:05:34.373
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:11:19.730
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-10 15:11:19.730
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE Software being installed: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE Software being installed: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.730
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201805210649 (org.eclipse.papyrus.outline.emftree 1.1.0.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201709130748 (org.eclipse.papyrus.outline.emftree 1.1.0.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.730
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE From: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201709130748]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.730
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE From: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.730
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201805210649]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:11:19.750
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-10 15:11:19.750
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE Software being installed: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE Software being installed: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.750
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201805210649 (org.eclipse.papyrus.outline.emftree 1.1.0.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201709130748 (org.eclipse.papyrus.outline.emftree 1.1.0.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.750
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE From: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201709130748]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.750
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE From: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.750
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201805210649]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:11:19.783
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-10 15:11:19.783
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE Software being installed: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE Software being installed: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.783
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201805210649 (org.eclipse.papyrus.outline.emftree 1.1.0.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201709130748 (org.eclipse.papyrus.outline.emftree 1.1.0.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.783
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE From: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201709130748]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.783
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE From: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.783
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201805210649]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:11:19.784
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-10 15:11:19.784
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE Software being installed: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE Software being installed: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.784
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201805210649 (org.eclipse.papyrus.outline.emftree 1.1.0.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE Papyrus Outline (Incubation) 1.1.0.201709130748 (org.eclipse.papyrus.outline.emftree 1.1.0.201709130748)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.784
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE From: Papyrus Examples (Incubation) 0.0.1.201709130748 (org.eclipse.papyrus.examples.feature.feature.group 0.0.1.201709130748)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201709130748]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:11:19.784
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE From: Papyrus User Examples (Incubation) 0.0.1.201805210649 (org.eclipse.papyrus.user.examples.feature.feature.group 0.0.1.201805210649)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:11:19.784
+!MESSAGE To: org.eclipse.papyrus.outline.emftree [1.1.0.201805210649]
+!SESSION 2019-09-10 15:20:48.134 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 15:21:27.967
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:39:07.397
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 15:39:07.397
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "XSD Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "EMF Sample Ecore Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "EMF Mapping UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "EMF Ecore Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "EMF Edit Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.397
+!MESSAGE "EMF Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF - Eclipse Modeling Framework SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "ASM Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "Guava: Google Core Libraries for Java" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "ASM Tree" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Ecore Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.398
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Model Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD Sample Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "ASM Tree Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD - XML Schema Definition Model" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Ecore Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Ecore Code Generator" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.398
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD Ecore Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Common UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF - Eclipse Modeling Framework Core Runtime" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Common" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Code Generation UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Edit UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "Guava: Google Core Libraries for Java Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "XSD - XML Schema Definition SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Code Generation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "ASM Core Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF - Eclipse Modeling Framework Runtime and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.398
+!MESSAGE "EMF Ecore Code Generator UI" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.398
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.398
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.398
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.398
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:39:07.417
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 15:39:07.418
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Sample Ecore Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Mapping UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Ecore Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Edit Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF - Eclipse Modeling Framework SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "ASM Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "Guava: Google Core Libraries for Java" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "ASM Tree" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Ecore Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.418
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Model Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Sample Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "ASM Tree Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD - XML Schema Definition Model" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Ecore Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Ecore Code Generator" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.418
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Ecore Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Common UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF - Eclipse Modeling Framework Core Runtime" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Common" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Code Generation UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Edit UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "Guava: Google Core Libraries for Java Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "XSD - XML Schema Definition SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Code Generation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "ASM Core Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF - Eclipse Modeling Framework Runtime and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.418
+!MESSAGE "EMF Ecore Code Generator UI" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.418
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.418
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.418
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.418
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.419
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.419
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.419
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.419
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.419
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:39:07.641
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 15:39:07.641
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Sample Ecore Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Mapping UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Ecore Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Edit Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF - Eclipse Modeling Framework SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "ASM Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "Guava: Google Core Libraries for Java" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "ASM Tree" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Ecore Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.641
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Model Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Sample Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "ASM Tree Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD - XML Schema Definition Model" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Ecore Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Ecore Code Generator" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.641
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Ecore Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Common UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF - Eclipse Modeling Framework Core Runtime" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Common" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Code Generation UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Edit UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "Guava: Google Core Libraries for Java Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "XSD - XML Schema Definition SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "EMF Code Generation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.641
+!MESSAGE "ASM Core Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF - Eclipse Modeling Framework Runtime and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Ecore Code Generator UI" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.642
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.642
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.642
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.642
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 15:39:07.642
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 15:39:07.642
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Sample Ecore Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Mapping UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Ecore Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Edit Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF - Eclipse Modeling Framework SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "ASM Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "Guava: Google Core Libraries for Java" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "ASM Tree" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Ecore Mapping Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.642
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Model Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD Sample Editor" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "ASM Tree Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD - XML Schema Definition Model" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Ecore Edit" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Ecore Code Generator" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 15:39:07.642
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Data Binding" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "XSD Ecore Converter" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Mapping" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Common UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF - Eclipse Modeling Framework Core Runtime" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.642
+!MESSAGE "EMF Common" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "EMF Code Generation UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "XSD Documentation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "EMF Edit UI" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "Guava: Google Core Libraries for Java Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "XSD - XML Schema Definition SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "EMF Code Generation" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "ASM Core Source" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "EMF - Eclipse Modeling Framework Runtime and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-10 15:39:07.643
+!MESSAGE "EMF Ecore Code Generator UI" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.643
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.643
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 15:39:07.643
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 15:39:07.643
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+!SESSION 2019-09-10 15:46:00.039 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 15:46:37.028
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 16:16:46.954
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 16:16:46.954
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:46.954
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:46.954
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:46.954
+!MESSAGE "EMF - Eclipse Modeling Framework Base Runtime" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:46.954
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:46.954
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:46.954
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:46.954
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 16:16:47.009
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 16:16:47.009
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.009
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.009
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.009
+!MESSAGE "EMF - Eclipse Modeling Framework Base Runtime" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.009
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.009
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.009
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.009
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 16:16:47.097
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 16:16:47.097
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.097
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.097
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.098
+!MESSAGE "EMF - Eclipse Modeling Framework Base Runtime" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-10 16:16:47.098
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-10 16:16:47.098
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.098
+!MESSAGE "Gson: Google Json Library for Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.098
+!MESSAGE "Gson: Google Json Library for Java Source" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-10 16:16:47.098
+!MESSAGE "EMF - Eclipse Modeling Framework Base Runtime" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE Software being installed: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE Software currently installed: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE From: Eclipse Modeling Tools 4.7.2.20171218-0600 (epp.package.modeling 4.7.2.20171218-0600)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE To: org.eclipse.platform.feature.group [4.7.2.v20171130-0510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-10 16:16:47.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE From: EMF RAP Edit UI 2.12.0.v20190323-1059 (org.eclipse.emf.rap.edit.ui.feature.group 2.12.0.v20190323-1059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-10 16:16:47.098
+!MESSAGE To: org.eclipse.platform.feature.group 0.0.0
+!SESSION 2019-09-10 16:22:38.842 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/michel/eclipse_oxygen2/workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 16:23:02.827
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.emf.converter 2 0 2019-09-10 16:27:50.753
+!MESSAGE org.eclipse.core.internal.resources.ResourceException: Resource '/uniandes.mdd.example.petrinetnetworksystem-master/model/petrinet.genmodel' does not exist.
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.core.internal.resources.ResourceException: Resource '/uniandes.mdd.example.petrinetnetworksystem-master/model/petrinet.genmodel' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.emf.converter.ModelConverter.getExternalGenModels(ModelConverter.java:408)
+	at org.eclipse.emf.converter.ui.contribution.base.ModelConverterPackagePage.filterEPackagesTable(ModelConverterPackagePage.java:901)
+	at org.eclipse.emf.converter.ui.contribution.base.ModelConverterPackagePage$1.run(ModelConverterPackagePage.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4577)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4186)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:269)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:290)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:390)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:151)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4602)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/uniandes.mdd.example.petrinetnetworksystem-master/model/petrinet.genmodel' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:207)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:525)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 57 more
+!SESSION 2019-09-10 16:28:53.600 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-10 16:29:16.834
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2019-09-10 16:29:34.104
+!MESSAGE Metamodel /uniandes.mdd.example.petrinetnetworksystem-master/model/petrinet.ecore registered successfully
+!SESSION 2019-09-17 19:10:25.303 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-17 19:11:32.438
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.6.v20170906-1226
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.epsilon.common.dt 1 0 2019-09-17 19:12:34.523
+!MESSAGE Metamodel /uniandes.mdd.example.petrinetnetworksystem-master/model/petrinet.ecore registered successfully
+
+!ENTRY org.eclipse.sirius.common.ui 4 0 2019-09-17 19:12:51.045
+!MESSAGE Error creating aird session data
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.dialogs.WizardNewFileCreationPage.getContainerFullPath(WizardNewFileCreationPage.java:538)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.pages.SelectAirdWizardPage.getFilePath(SelectAirdWizardPage.java:99)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.pages.SelectAirdWizardPage.getURI(SelectAirdWizardPage.java:125)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.InitializeEcoreDiagramWizard$1$2.execute(InitializeEcoreDiagramWizard.java:200)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.InitializeEcoreDiagramWizard$1.get(InitializeEcoreDiagramWizard.java:206)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.InitializeEcoreDiagramWizard$1.get(InitializeEcoreDiagramWizard.java:1)
+	at org.eclipse.emf.ecoretools.design.ui.wizard.pages.SelectRepresentationDescriptionWizardPage.setVisible(SelectRepresentationDescriptionWizardPage.java:439)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1226)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:582)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.emf.ecoretools.design.ui.action.EcoreInitDiagramFileAction.openCreateRepresentationWizard(EcoreInitDiagramFileAction.java:79)
+	at org.eclipse.emf.ecoretools.design.ui.action.EcoreInitDiagramFileAction.run(EcoreInitDiagramFileAction.java:70)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:247)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4602)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.605
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:138)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:50)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:136)
+	... 48 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/scoping/XbaseScopeProvider
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:276)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:655)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:578)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:446)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.emf.ecore.xcore.XcoreRuntimeModule.bindIScopeProvider(XcoreRuntimeModule.java:92)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.scoping.XbaseScopeProvider cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 68 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.673
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:138)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:50)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:136)
+	... 48 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/resource/XbaseResource
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:276)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:655)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:578)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:446)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.emf.ecore.xcore.XcoreRuntimeModule.bindXtextResource(XcoreRuntimeModule.java:73)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.resource.XbaseResource cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 68 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.821
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:138)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:50)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:136)
+	... 48 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/jvmmodel/JvmGlobalScopeProvider
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.bindIGlobalScopeProvider(AbstractXcoreRuntimeModule.java:254)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.jvmmodel.JvmGlobalScopeProvider cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 54 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.865
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:138)
+	at org.eclipse.xtext.service.FreeModule.configure(FreeModule.java:22)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:136)
+	... 48 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/linking/XbaseLinkingScopeProvider
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configureLinkingIScopeProvider(AbstractXcoreRuntimeModule.java:169)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.linking.XbaseLinkingScopeProvider cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 54 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.892
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.xbase.typing.ITypeProvider not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.xbase.typing.ITypeProvider not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:130)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:108)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:99)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:48)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.typing.ITypeProvider cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 53 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.914
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.common.types.util.TypeArgumentContextProvider not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.common.types.util.TypeArgumentContextProvider not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:130)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:108)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:99)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:48)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.common.types.util.TypeArgumentContextProvider cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 53 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:55.934
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.common.types.util.TypeConformanceComputer not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.common.types.util.TypeConformanceComputer not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:130)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:108)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:99)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:48)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:35)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:33)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:76)
+	at org.eclipse.emf.ecore.xcore.AbstractXcoreRuntimeModule.configure(AbstractXcoreRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.spi.Elements.getElements(Elements.java:92)
+	at com.google.inject.util.Modules$RealOverriddenModuleBuilder$1.configure(Modules.java:152)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+	at com.google.inject.spi.Elements.getElements(Elements.java:101)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.common.types.util.TypeConformanceComputer cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 53 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:56.975
+!MESSAGE org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator  - Failed to create injector for org.eclipse.emf.ecore.xcore.Xcore
+
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:56.994
+!MESSAGE org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator  - com.google.inject.internal.util.$ComputationException: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+
+!STACK 0
+com.google.inject.internal.util.$ComputationException: com.google.inject.internal.util.$ComputationException: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:553)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:419)
+	at com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl.get(CustomConcurrentHashMap.java:2041)
+	at com.google.inject.internal.FailableCache.get(FailableCache.java:50)
+	at com.google.inject.internal.ConstructorInjectorStore.get(ConstructorInjectorStore.java:49)
+	at com.google.inject.internal.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:125)
+	at com.google.inject.internal.InjectorImpl.initializeJitBinding(InjectorImpl.java:521)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBinding(InjectorImpl.java:847)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBindingRecursive(InjectorImpl.java:772)
+	at com.google.inject.internal.InjectorImpl.getJustInTimeBinding(InjectorImpl.java:256)
+	at com.google.inject.internal.InjectorImpl.getBindingOrThrow(InjectorImpl.java:205)
+	at com.google.inject.internal.InjectorImpl.getInternalFactory(InjectorImpl.java:853)
+	at com.google.inject.internal.FactoryProxy.notify(FactoryProxy.java:46)
+	at com.google.inject.internal.ProcessedBindingData.runCreationListeners(ProcessedBindingData.java:50)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: com.google.inject.internal.util.$ComputationException: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:553)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:419)
+	at com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl.get(CustomConcurrentHashMap.java:2041)
+	at com.google.inject.internal.FailableCache.get(FailableCache.java:50)
+	at com.google.inject.internal.MembersInjectorStore.get(MembersInjectorStore.java:65)
+	at com.google.inject.internal.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:73)
+	at com.google.inject.internal.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:28)
+	at com.google.inject.internal.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:36)
+	at com.google.inject.internal.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:32)
+	at com.google.inject.internal.FailableCache$1.apply(FailableCache.java:39)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:549)
+	... 44 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at com.google.inject.spi.InjectionPoint.getInjectionPoints(InjectionPoint.java:662)
+	at com.google.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:356)
+	at com.google.inject.internal.ConstructorBindingImpl.getInternalDependencies(ConstructorBindingImpl.java:151)
+	at com.google.inject.internal.InjectorImpl.getInternalDependencies(InjectorImpl.java:585)
+	at com.google.inject.internal.InjectorImpl.cleanup(InjectorImpl.java:543)
+	at com.google.inject.internal.InjectorImpl.initializeJitBinding(InjectorImpl.java:529)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBinding(InjectorImpl.java:847)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBindingRecursive(InjectorImpl.java:772)
+	at com.google.inject.internal.InjectorImpl.getJustInTimeBinding(InjectorImpl.java:256)
+	at com.google.inject.internal.InjectorImpl.getBindingOrThrow(InjectorImpl.java:205)
+	at com.google.inject.internal.InjectorImpl.getInternalFactory(InjectorImpl.java:853)
+	at com.google.inject.internal.SingleFieldInjector.<init>(SingleFieldInjector.java:41)
+	at com.google.inject.internal.MembersInjectorStore.getInjectors(MembersInjectorStore.java:125)
+	at com.google.inject.internal.MembersInjectorStore.createWithListeners(MembersInjectorStore.java:95)
+	at com.google.inject.internal.MembersInjectorStore.access$000(MembersInjectorStore.java:34)
+	at com.google.inject.internal.MembersInjectorStore$1.create(MembersInjectorStore.java:42)
+	at com.google.inject.internal.MembersInjectorStore$1.create(MembersInjectorStore.java:39)
+	at com.google.inject.internal.FailableCache$1.apply(FailableCache.java:39)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:549)
+	... 54 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.services.XbaseGrammarAccess$XExpressionInsideBlockElements cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 76 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:57.007
+!MESSAGE org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory  - Failed to create injector for org.eclipse.emf.ecore.xcore.Xcore
+
+!STACK 0
+java.lang.RuntimeException: Failed to create injector for org.eclipse.emf.ecore.xcore.Xcore
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:71)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.getInjector(XcoreActivator.java:55)
+	at org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory.getInjector(XcoreExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:182)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:173)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:168)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:161)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:69)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:291)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:319)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:155)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: com.google.inject.internal.util.$ComputationException: com.google.inject.internal.util.$ComputationException: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:553)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:419)
+	at com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl.get(CustomConcurrentHashMap.java:2041)
+	at com.google.inject.internal.FailableCache.get(FailableCache.java:50)
+	at com.google.inject.internal.ConstructorInjectorStore.get(ConstructorInjectorStore.java:49)
+	at com.google.inject.internal.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:125)
+	at com.google.inject.internal.InjectorImpl.initializeJitBinding(InjectorImpl.java:521)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBinding(InjectorImpl.java:847)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBindingRecursive(InjectorImpl.java:772)
+	at com.google.inject.internal.InjectorImpl.getJustInTimeBinding(InjectorImpl.java:256)
+	at com.google.inject.internal.InjectorImpl.getBindingOrThrow(InjectorImpl.java:205)
+	at com.google.inject.internal.InjectorImpl.getInternalFactory(InjectorImpl.java:853)
+	at com.google.inject.internal.FactoryProxy.notify(FactoryProxy.java:46)
+	at com.google.inject.internal.ProcessedBindingData.runCreationListeners(ProcessedBindingData.java:50)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:133)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:95)
+	at com.google.inject.Guice.createInjector(Guice.java:72)
+	at com.google.inject.Guice.createInjector(Guice.java:62)
+	at org.eclipse.emf.ecore.xcore.ui.internal.XcoreActivator.createInjector(XcoreActivator.java:67)
+	... 25 more
+Caused by: com.google.inject.internal.util.$ComputationException: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:553)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:419)
+	at com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl.get(CustomConcurrentHashMap.java:2041)
+	at com.google.inject.internal.FailableCache.get(FailableCache.java:50)
+	at com.google.inject.internal.MembersInjectorStore.get(MembersInjectorStore.java:65)
+	at com.google.inject.internal.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:73)
+	at com.google.inject.internal.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:28)
+	at com.google.inject.internal.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:36)
+	at com.google.inject.internal.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:32)
+	at com.google.inject.internal.FailableCache$1.apply(FailableCache.java:39)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:549)
+	... 44 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/services/XbaseGrammarAccess$XExpressionInsideBlockElements
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at com.google.inject.spi.InjectionPoint.getInjectionPoints(InjectionPoint.java:662)
+	at com.google.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:356)
+	at com.google.inject.internal.ConstructorBindingImpl.getInternalDependencies(ConstructorBindingImpl.java:151)
+	at com.google.inject.internal.InjectorImpl.getInternalDependencies(InjectorImpl.java:585)
+	at com.google.inject.internal.InjectorImpl.cleanup(InjectorImpl.java:543)
+	at com.google.inject.internal.InjectorImpl.initializeJitBinding(InjectorImpl.java:529)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBinding(InjectorImpl.java:847)
+	at com.google.inject.internal.InjectorImpl.createJustInTimeBindingRecursive(InjectorImpl.java:772)
+	at com.google.inject.internal.InjectorImpl.getJustInTimeBinding(InjectorImpl.java:256)
+	at com.google.inject.internal.InjectorImpl.getBindingOrThrow(InjectorImpl.java:205)
+	at com.google.inject.internal.InjectorImpl.getInternalFactory(InjectorImpl.java:853)
+	at com.google.inject.internal.SingleFieldInjector.<init>(SingleFieldInjector.java:41)
+	at com.google.inject.internal.MembersInjectorStore.getInjectors(MembersInjectorStore.java:125)
+	at com.google.inject.internal.MembersInjectorStore.createWithListeners(MembersInjectorStore.java:95)
+	at com.google.inject.internal.MembersInjectorStore.access$000(MembersInjectorStore.java:34)
+	at com.google.inject.internal.MembersInjectorStore$1.create(MembersInjectorStore.java:42)
+	at com.google.inject.internal.MembersInjectorStore$1.create(MembersInjectorStore.java:39)
+	at com.google.inject.internal.FailableCache$1.apply(FailableCache.java:39)
+	at com.google.inject.internal.util.$MapMaker$StrategyImpl.compute(MapMaker.java:549)
+	... 54 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.services.XbaseGrammarAccess$XExpressionInsideBlockElements cannot be found by org.eclipse.emf.ecore.xcore_1.0.2.v20130212-0719
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 76 more
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:57.011
+!MESSAGE org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$BuilderParticipantReader  - Plugin org.eclipse.emf.ecore.xcore.ui, extension org.eclipse.xtext.builder.participant
+
+
+!ENTRY org.apache.log4j 4 0 2019-09-17 19:22:57.012
+!MESSAGE org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$BuilderParticipantReader  - Failed to create injector for org.eclipse.emf.ecore.xcore.Xcore ExtensionFactory: org.eclipse.emf.ecore.xcore.ui.XcoreExecutableExtensionFactory
+

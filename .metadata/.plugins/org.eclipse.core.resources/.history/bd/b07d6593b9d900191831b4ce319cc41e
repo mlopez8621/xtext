@@ -1,0 +1,92 @@
+grammar org.xtext.example.mydsl.Rest with org.eclipse.xtext.common.Terminals
+
+generate rest "http://www.xtext.org/example/mydsl/Rest"
+
+Model:
+	'apiURL'IGUAL STRING PUNTOCOMA
+	entidades+=Entidad+ 
+	metodos+=Metodo+ 
+	tests+=Test+;
+
+Test:
+	'a'
+;
+
+Metodo:
+	GET | PUT | POST | DELETE
+;
+
+DELETE:
+	
+;
+
+POST:
+	
+;
+
+PUT:
+	
+;
+
+GET:
+	'URL' IGUAL path=[URL]
+;
+
+URL:
+	('/'ID)+ (PathParam)?
+;
+
+PathParam:
+	'/:{'ID'}'
+;
+
+QueryParam:
+	
+;
+
+Entidad:
+	EntidadSimple | EntidadMock
+;
+
+EntidadMock:
+	'Entity' name=ID '{' atributos+=(AtributoSimple | AtributoMock)*'}'
+;
+
+EntidadSimple:
+	'SimpleEntity' name=ID '{' atributosSimples+=AtributoSimple* '}'
+;
+
+AtributoSimple:
+	tipo=[TipoElemento] array?='[]' name=ID PUNTOCOMA
+;
+
+AtributoMock:
+	tipo=[TipoElemento] array?='[]' name=ID '(' ((pk?=('PK')? (COMA MockType)?) | MockType)  ')' PUNTOCOMA
+;
+
+MockType:
+	'mockType' IGUAL TipoMock
+;
+
+TipoMock:
+	'FirstNameType' | 'FirstNameMaleType' | 'LastNameType' | 'FamilyNameType' | 'FullNameType' | 'GenderType' |
+	'EmailAddressType' | 'PhoneType' | 'CountryType' | 'CityType' | 'CountryCodeType' | 'LatitudeType' | 'LongitudeType' |
+	'RowNumberType' | 'BooleanType' | 'FirstNameFemaleType'
+;
+
+TipoElemento:
+	TipoBasico | TipoEntidad
+;
+
+TipoEntidad:
+	entidad=[Entidad]
+;
+
+TipoBasico:
+	tipoNombre=('string' | 'int' | 'boolean')
+;
+
+terminal IGUAL: '=';
+terminal PUNTOCOMA: ';';
+terminal COMA:',';
+

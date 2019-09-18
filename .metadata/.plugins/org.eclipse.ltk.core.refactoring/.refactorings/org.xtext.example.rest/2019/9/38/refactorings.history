@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;leguaje.txt&apos; to &apos;org.xtext.example.rest/src/org.xtext.example.mydsl&apos;&#x0A;- Original project: &apos;org.xtext.example.rest&apos;&#x0A;- Destination element: &apos;org.xtext.example.rest/src/org.xtext.example.mydsl&apos;&#x0A;- Original element: &apos;leguaje.txt&apos;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;org.xtext.example.mydsl" element1="src/org/xtext/example/leguaje.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1568766410233" units="0" version="1.0"/>
+</session>

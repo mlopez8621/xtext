@@ -1,0 +1,174 @@
+Lenguaje Textual
+
+apiURL="http://127.0.0.1/api/v1";
+Entity Country{
+	string id (PK,mockType=RowNumberType);
+	string shortName ( mockType=CountryCodeType);
+	string name (mockType=CountryType);
+	string native;
+	string phone (mockType=PhoneType);
+	string continent;
+	string capital ( mockType=CityType);
+	string currency;
+	string[] languages;
+	string emoji;
+	string emojiU;
+}
+
+Entity Student{
+	string id (PK,mockType=RowNumberType);
+	string first_name ( mockType=FirstNameType);	
+	string last_name ( mockType=LastNameType);	
+ 	string gender ( mockType=GenderType);	
+	string code;
+	string country ( mockType=CountryType);
+	string city ( mockType=CityType);
+	string university;
+}
+SimpleEntity Respuesta{
+	
+	string status;
+	string message;
+}
+GET GetCountries{
+				
+	URL = /countries;	
+	
+	Response {
+		Type = Country[];
+	}	
+}
+
+GET GetCountryByShort{
+				
+	URL = /countries/:{country};
+	
+	Response {
+		Type = Country;
+	}	
+}
+GET GetStatesByCountry{
+				
+	URL = /countries/:{country}/states;
+	
+	Response {
+		Type = string[];
+	}	
+}
+GET GETCitiesByCountry{
+				
+	URL = /countries/:{country}/cities?${state};
+	
+	Response {
+		Type = string[];
+	}	
+}
+
+GET GetStudents{
+				
+	URL = /students;	
+	
+	Response {
+		Type = Student[];
+	}	
+}
+
+POST AddStudent{
+				
+	URL = /students;
+	Request {
+		Type = Student;
+	}
+	Response {
+		Type = Respuesta;
+	}	
+}
+GET GetStudent{
+				
+	URL = /students/:{id};
+	
+	Response {
+		Type = Student;
+	}	
+}
+DELETE DeleteStudent{
+				
+	URL = /students/:{id};
+	
+	Response {
+		Type = Respuesta;
+	}	
+}
+Test p1{
+	service = GetCountries;
+	description ="Probar que retorne 200";	
+	Assertions{
+		response.status == 200; 
+	}
+}
+
+Test p2{
+	service = GetCountryByShort;
+	description ="No existe el país";
+	Mapping[
+		{parameter=GetCountryByShort.country,value="BR"}
+	]	
+	Assertions{
+		response.status == 200; 
+		response->Country.shortName == parameter.GetCountryByShort.country;
+		response->Country.name=='Brazil';
+	}
+}
+Test p3{
+	service = GETCitiesByCountry;
+	description ="Retorna una lista de ciudades";
+	Mapping[
+		{parameter=GETCitiesByCountry.country,value="BR"}
+		{parameter=GETCitiesByCountry.state,value="Parana"}
+	]	
+	Assertions{
+		response.status == 200; 
+		response >= 10 ;
+	}
+}
+
+Test p4{
+	service = AddStudent;
+	description ="Agrega un estudiante";	
+	Assertions{
+		response.status == 200; 
+		response->Respuesta.status == 'success';
+	}
+}
+
+Test p4{
+	service = DeleteStudent;
+	description ="Elimina un estudiante";
+	Mapping[
+		{parameter=DeleteStudent.id,value=request->Student.id}
+	]	
+	Assertions{
+		response.status == 200; 
+		response->Respuesta.status == 'success';
+	}
+}
+
+
+
+A tener en cuenta
+Entity Es una entidad para descargar datos de mockaroo
+
+SimpleEntity Es una entidad que no descarga datos de mockaroo y se usa generalmente para validar respuestas que no tienen referencia a entities.
+
+[] define que un atributo es un array
+
+En mapping se definen que valores puedo asignarle a los parámetros de entrada, en este caso en el método DELETE student se dice que el parámetro id hace referencia la entidad id por lo que se usarán los datos descargados de mockaroo para este llamado.
+Mapping[
+		{parameter=DeleteStudent.id,value=request->Student.id}
+	]
+
+Los mappings también pueden hacerse a valores primitivos, en este caso country y state son asignados a valores de tipo string.
+Mapping[
+		{parameter=GETCitiesByCountry.country,value="BR"}
+		{parameter=GETCitiesByCountry.state,value="Parana"}
+	]

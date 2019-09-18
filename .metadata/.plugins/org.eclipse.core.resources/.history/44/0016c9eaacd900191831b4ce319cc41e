@@ -1,0 +1,9 @@
+grammar org.xtext.example.mydsl.Rest with org.eclipse.xtext.common.Terminals
+
+generate rest "http://www.xtext.org/example/mydsl/Rest"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

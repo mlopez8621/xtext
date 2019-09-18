@@ -1,0 +1,35 @@
+grammar org.xtext.example.mydsl.Rest with org.eclipse.xtext.common.Terminals
+
+generate rest "http://www.xtext.org/example/mydsl/Rest"
+
+Model:
+	'apiURL'IGUAL STRING PUNTOCOMA
+	servicioRest+=Entidad+ Metodo+ Test+;
+
+Test:
+	'a'
+;
+
+Metodo:
+	'b'
+;
+
+Entidad:
+	EntidadSimple | EntidadMock
+;
+
+EntidadMock:
+	
+;
+
+EntidadSimple:
+	'SimpleEntity' name=ID '{' Atributo '}'
+;
+
+Atributo:
+	tipo=[Entidad] (array?='[' ']')? name=ID PUNTOCOMA
+;
+
+terminal IGUAL: '=';
+terminal PUNTOCOMA: ';';
+
