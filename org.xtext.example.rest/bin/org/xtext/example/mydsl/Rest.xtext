@@ -9,21 +9,54 @@ Model:
 	tests+=Test+;
 
 Test:
+	{Test}
 	'Test' name=ID '{'
 	'service' IGUAL service=[Metodo] PUNTOCOMA
 	'description' IGUAL STRING PUNTOCOMA
-	(Mapping)?
+	mapping=(Mapping)?
+	assertion=Assertion
 	'}'
 ;
 
+Assertion:
+	{Assertion}
+	'Assertions' '{'
+		'response.status' IGUALDAD INT PUNTOCOMA
+		assertResponse+=AssertResponse*		
+	 '}'
+;
+
+AssertResponse:
+	{AssertResponse}
+	'response' ((Comparador (INT | STRING)) | '->' comparacion=Comparacion) PUNTOCOMA
+;
+
+Comparacion:
+	{Comparacion}
+	entidad=[Entidad] PUNTO atributo=[Atributo]
+	Comparador (INT | STRING | 'parameter.'metodo=[Metodo] PUNTO param=[PathParam])
+;
+
+Comparador:
+	(IGUALDAD | MAYOR | MENOR | MAYORIGUAL | MENORIGUAL)
+;
+
 Mapping:
+	{Mapping}
 	'Mapping' '[' 
 		maps+=(Map)+
 	']'
 ;
 
 Map:
-	'{' 'parameter' IGUAL metodo=[Metodo]'.'param=[PathParam] COMA 'value' IGUAL STRING '}'
+	{Map}
+	'{' 'parameter' IGUAL name=MapName COMA 'value' IGUAL 
+	(STRING | INT | 'request' '->' entidadMap=[Entidad] PUNTO atributo=[Atributo]) '}'
+;
+
+MapName:
+	{MapName}
+	metodo=[Metodo] PUNTO param=[PathParam]
 ;
 
 Metodo:
@@ -31,41 +64,47 @@ Metodo:
 ;
 
 DELETE:
+	{DELETE}
 	'DELETE' name=ID '{'
-	'URL' IGUAL path=[URL]
-	response=[Response]
+	'URL' IGUAL path=URL PUNTOCOMA
+	response=Response
 	'}'
 ;
 
 POST:
+	{POST}
 	'POST' name=ID '{'
-	'URL' IGUAL path=[URL]
-	request=[Request]
-	response=[Response]
+	'URL' IGUAL path=URL PUNTOCOMA
+	request=Request
+	response=Response
 	'}'
 ;
 
 PUT:
+	{PUT}
 	'PUT' name=ID '{'
-	'URL' IGUAL path=[URL]
-	request=[Request]
-	response=[Response]
+	'URL' IGUAL path=URL PUNTOCOMA
+	request=Request
+	response=Response
 	'}'
 ;
 
 GET:
+	{GET}
 	'GET' name=ID '{'
-	'URL' IGUAL path=[URL]
-	response=[Response]
+	'URL' IGUAL path=URL PUNTOCOMA
+	response=Response
 	'}'
 ;
 
 Response:
-	'Response' '{' 'Type' IGUAL tipoResponse=[TipoElemento] array?=('[]')? PUNTOCOMA '}'
+	{Response}
+	'Response' '{' 'Type' IGUAL tipoResponse=TipoElemento array?=('[]')? PUNTOCOMA '}'
 ;
 
 Request:
-	'Request' '{' 'Type' IGUAL tipoResponse=[TipoElemento] array?=('[]')? PUNTOCOMA '}'
+	{Request}
+	'Request' '{' 'Type' IGUAL tipoResponse=TipoElemento array?=('[]')? PUNTOCOMA '}'
 ;
 
 
@@ -79,10 +118,12 @@ PathName:
 ;
 
 PathParam:
+	{PathParam}
 	'/:{'name=ID'}'
 ;
 
 QueryParam:
+	{QueryParam}
 	'${'name=ID'}'
 ;
 
@@ -91,19 +132,23 @@ Entidad:
 ;
 
 EntidadMock:
-	'Entity' name=ID '{' atributos+=(AtributoSimple | AtributoMock)*'}'
+	{EntidadMock}
+	'Entity' name=ID '{' atributos+=Atributo* '}'
 ;
 
 EntidadSimple:
-	'SimpleEntity' name=ID '{' atributosSimples+=AtributoSimple* '}'
+	{EntidadSimple}
+	'SimpleEntity' name=ID '{' atributos+=Atributo* '}'
 ;
 
-AtributoSimple:
-	tipo=[TipoElemento] array?=('[]')? name=ID PUNTOCOMA
+Atributo:
+	{Atributo}
+	tipo=TipoElemento array?=('[]')? name=ID mocktype=(Mock)? PUNTOCOMA
 ;
 
-AtributoMock:
-	tipo=[TipoElemento] array?=('[]')? name=ID '(' ((pk?=('PK')? (COMA MockType)?) | MockType)  ')' PUNTOCOMA
+Mock:
+	{Mock}
+	'(' ((pk?=('PK')? (COMA MockType)?) | MockType)  ')' 
 ;
 
 MockType:
@@ -121,14 +166,22 @@ TipoElemento:
 ;
 
 TipoEntidad:
+	{TipoEntidad}
 	entidad=[Entidad]
 ;
 
 TipoBasico:
-	tipoNombre=('string' | 'int' | 'boolean')
+	{TipoBasico}
+	name=('string' | 'int' | 'boolean')
 ;
 
 terminal IGUAL: '=';
+terminal IGUALDAD: '==';
+terminal MAYOR: '>';
+terminal MENOR: '<';
+terminal MAYORIGUAL: '>=';
+terminal MENORIGUAL: '<=';
 terminal PUNTOCOMA: ';';
 terminal COMA:',';
+terminal PUNTO: '.';
 

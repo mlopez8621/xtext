@@ -1,0 +1,169 @@
+grammar org.xtext.example.mydsl.Rest with org.eclipse.xtext.common.Terminals
+
+generate rest "http://www.xtext.org/example/mydsl/Rest"
+
+Model:
+	'apiURL'IGUAL STRING PUNTOCOMA
+	entidades+=Entidad+ 
+	metodos+=Metodo+ 
+	tests+=Test+;
+
+Test:
+	{Test}
+	'Test' name=ID '{'
+	'service' IGUAL service=[Metodo] PUNTOCOMA
+	'description' IGUAL STRING PUNTOCOMA
+	mapping=(Mapping)?
+	assertion=Assertion
+	'}'
+;
+
+Assertion:
+	{Assertion}
+	'Assertion' '{'
+		'response.status' IGUALDAD INT PUNTOCOMA
+		assertResponse+=AssertResponse*		
+	 '}'
+;
+
+AssertResponse:
+	{AssertResponse}
+	'response' ((Comparador (INT | STRING)) | '->' comparacion=Comparacion) PUNTOCOMA
+;
+
+Comparacion:
+	{Comparacion}
+	entidad=[Entidad]'.'(atributoEntidad=[AtributoSimple] | atributoEntidad=[AtributoMock]) 
+	Comparador (INT | STRING | 'parameter.'map=[Map])
+;
+
+Comparador:
+	(IGUALDAD | MAYOR | MENOR | MAYORIGUAL | MENORIGUAL)
+;
+
+Mapping:
+	{Mapping}
+	'Mapping' '[' 
+		maps+=(Map)+
+	']'
+;
+
+Map:
+	'{' 'parameter' IGUAL name=MapName COMA 'value' IGUAL STRING '}'
+;
+
+MapName:
+	metodo=[Metodo]'.'param=[PathParam]
+;
+
+Metodo:
+	GET | PUT | POST | DELETE
+;
+
+DELETE:
+	'DELETE' name=ID '{'
+	'URL' IGUAL path=[URL]
+	response=[Response]
+	'}'
+;
+
+POST:
+	'POST' name=ID '{'
+	'URL' IGUAL path=[URL]
+	request=[Request]
+	response=[Response]
+	'}'
+;
+
+PUT:
+	'PUT' name=ID '{'
+	'URL' IGUAL path=[URL]
+	request=[Request]
+	response=[Response]
+	'}'
+;
+
+GET:
+	'GET' name=ID '{'
+	'URL' IGUAL path=[URL]
+	response=[Response]
+	'}'
+;
+
+Response:
+	'Response' '{' 'Type' IGUAL tipoResponse=[TipoElemento] array?=('[]')? PUNTOCOMA '}'
+;
+
+Request:
+	'Request' '{' 'Type' IGUAL tipoResponse=[TipoElemento] array?=('[]')? PUNTOCOMA '}'
+;
+
+
+URL:
+	{URL}
+	PathName (PathName | pathparam+=PathParam)* ('?'queryparam=(QueryParam))? 
+;
+
+PathName:
+	('/'ID) 
+;
+
+PathParam:
+	'/:{'name=ID'}'
+;
+
+QueryParam:
+	'${'name=ID'}'
+;
+
+Entidad:
+	EntidadSimple | EntidadMock
+;
+
+EntidadMock:
+	'Entity' name=ID '{' atributos+=(AtributoSimple | AtributoMock)*'}'
+;
+
+EntidadSimple:
+	'SimpleEntity' name=ID '{' atributosSimples+=AtributoSimple* '}'
+;
+
+AtributoSimple:
+	tipo=[TipoElemento] array?=('[]')? name=ID PUNTOCOMA
+;
+
+AtributoMock:
+	tipo=[TipoElemento] array?=('[]')? name=ID '(' ((pk?=('PK')? (COMA MockType)?) | MockType)  ')' PUNTOCOMA
+;
+
+MockType:
+	'mockType' IGUAL TipoMock
+;
+
+TipoMock:
+	'FirstNameType' | 'FirstNameMaleType' | 'LastNameType' | 'FamilyNameType' | 'FullNameType' | 'GenderType' |
+	'EmailAddressType' | 'PhoneType' | 'CountryType' | 'CityType' | 'CountryCodeType' | 'LatitudeType' | 'LongitudeType' |
+	'RowNumberType' | 'BooleanType' | 'FirstNameFemaleType'
+;
+
+TipoElemento:
+	TipoBasico | TipoEntidad
+;
+
+TipoEntidad:
+	entidad=[Entidad]
+;
+
+TipoBasico:
+	tipoNombre=('string' | 'int' | 'boolean')
+;
+
+terminal IGUAL: '=';
+terminal IGUALDAD: '==';
+terminal MAYOR: '>';
+terminal MENOR: '<';
+terminal MAYORIGUAL: '>=';
+terminal MENORIGUAL: '<=';
+terminal PUNTOCOMA: ';';
+terminal COMA:',';
+
